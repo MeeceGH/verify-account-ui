@@ -55,10 +55,22 @@ body {
     padding: 1rem 0;
     margin: 0 0.5rem;
     border-color: rgba(0, 0, 0, 0.1);
+    -moz-appearance: textfield;
 }
 
 .digit:focus {
-    outline-color:dodgerblue
+    outline: none;
+}
+
+.digit::-webkit-outer-spin-button,
+.digit::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.digit:valid {
+    border-color: #3498db;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
 }
 
 .disclaimer {
